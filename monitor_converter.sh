@@ -39,7 +39,7 @@ for azw3_file in *.azw3; do
 
         docker run --rm \
           -v "$TARGET_DIR":/target \
-          mio-convertitore:latest \
+          ebook_converter:latest \
           "$azw3_file" "$epub_file"
 
         chmod 666 "$epub_file"
