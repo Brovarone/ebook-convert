@@ -19,7 +19,7 @@ for epub_file in *.epub; do
         # Esegue la conversione usando la tua immagine aggiornata e leggera
         docker run --rm \
           -v "$TARGET_DIR":/target \
-          mio-convertitore:latest \
+          ebook_converter:latest \
           "$epub_file" "$azw3_file"
 
         # Imposta i permessi corretti per evitare che Grimmory si blocchi
